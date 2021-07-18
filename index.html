@@ -10,8 +10,16 @@
 
     <title>Google</title>
     <style>
+        html,
         body {
+            margin: 0px;
+        }
+
+        body {
+            height: 100vh;
             font-family: arial;
+
+
         }
 
         #nav {
@@ -21,6 +29,8 @@
             justify-content: flex-end;
             align-items: center;
             width: 99vw;
+            color: rgb(88, 88, 88);
+            padding-top: 8px;
         }
 
         #nav li {
@@ -49,7 +59,7 @@
         #search {
             font-size: 16px;
 
-            width: 550px;
+            width: 35vw;
             height: 40px;
             border-radius: 40px;
             border: 0.5px solid rgb(218, 218, 218);
@@ -84,10 +94,12 @@
             top: 12px;
 
         }
-        .buttons{
+
+        .buttons {
             margin-top: 20px;
         }
-        .buttons > *{
+
+        .buttons>* {
             font-size: 14px;
             color: rgb(63, 63, 63);
             background-color: rgb(243, 243, 243);
@@ -95,7 +107,43 @@
             margin: 5px;
             border: 0;
             border-radius: 5px;
-           
+
+        }
+
+        .end {
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(236, 236, 236);
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border: 0;
+            font-size: 14px;
+            color: rgb(129, 129, 129);
+
+        }
+        .end p{
+            padding: 0px 25px 0px 25px
+        }
+
+        #endmain{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        #endmain>* {
+
+            padding: 15px 25px 15px 25px;
+        }
+
+        #endmain div {
+            display: flex;
+        }
+
+        #endmain div li {
+            list-style-type: none;
+            padding-right: 20px;
         }
     </style>
 </head>
@@ -106,7 +154,7 @@
         <li>Gmail</li>
         <li>Images</li>
         <li><span class="material-icons">apps</span></li>
-        <li id="dp"><img src="dp.png" alt="dp"></li>
+        <li id="dp"><a href="https://github.com/indezah" target="_blank"><img src="dp.png" alt="dp"></a></li>
     </nav>
     <section id="main">
         <img src="/googlelogo_color_272x92dp.png" alt="Google">
@@ -119,6 +167,20 @@
         </div>
     </section>
     <section class="end">
+        <p>Sri Lanka</p>
+        <div id="endmain">
+            <div>
+                <li>About</li>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search Works</li>
+            </div>
+            <div>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </div>
+        </div>
     </section>
 </body>
 

@@ -10,6 +10,13 @@
 
     <title>Google</title>
     <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
         html,
         body {
             margin: 0px;
@@ -20,6 +27,11 @@
             font-family: arial;
 
 
+        }
+        li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgb(53, 53, 53);
         }
 
         #nav {
@@ -107,8 +119,13 @@
             margin: 5px;
             border: 0;
             border-radius: 5px;
-
         }
+
+        .buttons>*:hover {
+            cursor: pointer;
+            box-shadow:0px 0px 8px -5px #000000;
+        }
+
 
         .end {
             position: absolute;
@@ -123,15 +140,17 @@
             color: rgb(129, 129, 129);
 
         }
-        .end p{
+
+        .end p {
             padding: 0px 25px 0px 25px
         }
 
-        #endmain{
+        #endmain {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
         }
+
         #endmain>* {
 
             padding: 15px 25px 15px 25px;
